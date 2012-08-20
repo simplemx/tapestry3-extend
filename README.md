@@ -27,7 +27,11 @@
 
 ## 2.markup
 
-使用Tapestry的页面需要写很多的标签，比如就一个属性显示标签却要写长长的<span jwcid="@Insert" value="ognl:**"/>。相对于无论是JSP还是现在很多的模板引擎，Tapestry的这点都是很烂很坑爹的。
+使用Tapestry的页面需要写很多的标签，比如就一个属性显示标签却要写长长的markup
+	
+	<span jwcid="@Insert" value="ognl:**"/>
+
+相对于无论是JSP还是现在很多的模板引擎，Tapestry的这点都是很烂很坑爹的。
 
 所以，加入一个翻译过程，为Tapestry的Insert、Conditional标签加上解释。将简短的markup翻译成<span jwcid="@Insert" value="ognl:**"/>这样的Tapestry标签。方便开发的时候编写模板。
 
